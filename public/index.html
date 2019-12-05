@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chat JavaScript</h1>
+    <div class="caja-entrar">
+        <p id="etiqueta">Nickname:</p>
+        <input type="text" name="usuario" id="nickname" class="entrada" placeholder="Usuario">
+        <input type="submit" id="entrar" value="Entrar">
+    </div>
+    <br>
+    <div class="caja-chat" id="scroll">
+        <div id="texto">
+        </div>
+        <div id="accion"></div>
+    </div>
+
+    <div id="caja-enviar">
+            <input type="text" id="mensaje" placeholder="Ingrese mensaje">
+            <input type="submit" id="enviar" value="Enviar">
+            <input type="file" id="archivo" onchange="ruta.value = this.value" accept=".gif">
+    </div>
+
+    
+   
+    <!-- <footer>Elaborado por Juan Cuesta</footer> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

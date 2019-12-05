@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+body {
+    background-color: #f7f4f4;
+    
+}
+
+#etiqueta {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.caja-entrar {
+    background-color: white;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.caja-chat {
+    background-color: white;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+p {
+    margin: 2px 0;
+}
+
+.entrada {/*nickname*/
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#entrar {
+    border: none;
+    padding: 12px 0;
+    background-color: #1f84d6;
+    color: #ffffff;
+    border-radius: 0 0 2px 2px;
+    width: 50%;
+    font-size: 18px;
+}
+
+
+/*---------------------------------*/
+#caja-enviar {
+    box-sizing: border-box;
+    position: relative;
+    height: auto;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#mensaje {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 18px;
+    width: 65%;
+}
+
+#enviar {
+    box-sizing: border-box;
+    border: none;
+    padding: 12px 0;
+    background-color: #1f84d6;
+    color: #ffffff;
+    border-radius: 0 0 2px 2px;
+    font-size: 18px;
+    width: 15%;
+}
+
+#archivo {
+    box-sizing: border-box;
+    border: none;
+    padding: 12px 0;
+    background: #1f84d6;
+    color: #ffffff;
+    border-radius: 0 0 2px 2px;
+    font-size: 18px;
+    width: 15%;
+}
+/*---------------------------------*/
+
+
+
+
+#scroll{
+    height:400px;
+    width:50%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+img {
+    height: 40px;
+    width: 50px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
