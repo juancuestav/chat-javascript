@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,58 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Chat JavaScript</h1>
     <div class="caja-entrar">
-        <p id="etiqueta">Nickname:</p>
+        <strong id="etiqueta">Nickname:</strong>
         <input type="text" name="usuario" id="nickname" class="entrada" placeholder="Usuario">
         <input type="submit" id="entrar" value="Entrar">
     </div>
     <br>
     <div class="caja-chat" id="scroll">
+        <!-- Espacio de mensajes y acciones -->
         <div id="texto">
+            <p id="clickder"></p>
         </div>
         <div id="accion"></div>
     </div>
 
     <div id="caja-enviar">
-            <input type="text" id="mensaje" placeholder="Ingrese mensaje">
-            <input type="submit" id="enviar" value="Enviar">
-            <input type="file" id="archivo" onchange="ruta.value = this.value" accept=".gif">
+        <!-- Espacio de escribir y enviar -->
+        <input type="text" id="mensaje" placeholder="Ingrese mensaje">
+        <input type="submit" id="enviar" value="Enviar">
+
+        <!-- <input type="file" id="archivo" onchange="ruta.value = this.value" accept=".gif"> -->
+        <form method="POST" action="/subirfile" enctype="multipart/form-data">
+            <input type="file" id="archivochat" name="file">
+            <input type="submit" value="Archivo">
+        </form>
     </div>
 
-    
-   
+
+    <br><br>
+    <form method="POST" action="/subir" enctype="multipart/form-data">
+        <input type="file" id="archivo" name="file">
+        <input type="submit" value="Subir imagen">
+    </form>
+
+
+
+    <!-- <div class="dropdown">
+        <button onclick='derecho()' class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div> -->
+
+
+
     <!-- <footer>Elaborado por Juan Cuesta</footer> -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
